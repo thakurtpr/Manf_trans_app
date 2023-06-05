@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, {  useState } from 'react';
+import { createContext } from "react";
 
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import "./styles/app.css"
+export const server = "https://nodejs-manf-trans.onrender.com"
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+export const Context = createContext({ isAuthenticated: false });
+
+
+const AppWrapper = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [userType, setUserType] = useState("Transporter");
+
+
+
+  return (
+    <Context.Provider
+      value={{
+        isAuthenticated,
+        setIsAuthenticated,
+        userType, setUserType
+        
+      }}
+    >
+      <App />
+    </Context.Provider>
+  );
+};
+
 root.render(
   <React.StrictMode>
-    <App />
+    <AppWrapper />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

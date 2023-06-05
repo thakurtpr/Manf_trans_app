@@ -1,0 +1,82 @@
+body {
+  background-color: #f6f2f2;
+}
+.login_form_container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.login_form_container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login_form .form_group {
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.login_form .form_group label {
+  display: block;
+  font-weight: bold;
+}
+
+.login_form .form_group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 5px 2px rgba(221, 29, 29, 0.05);
+}
+
+.login_form button {
+  width: 100%;
+  padding: 14px;
+  background-color: rgba(221, 29, 29, 0.05);
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* .selection_element {
+  border: 1px solid #ccc;
+  color: #605a5a;
+  margin: 0px 0px 17px 66 px;
+  
+} */
+.selection_element {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 17px;
+}
+
+#registerSelect {
+  padding: 14px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 5px 2px rgba(221, 29, 29, 0.05);
+
+  border: none;
+  outline: none;
+}
+
+form p a {
+  text-decoration: none;
+  padding-left: 7px;
+  color: black;
+  font-weight: 500;
+}
+#log {
+  margin: 8px 0px 0px 12px;
+}
+#reg {
+  margin: 8px 0px 0px 21px;
+}

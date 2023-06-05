@@ -1,0 +1,147 @@
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal_header {
+  padding-right: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal_content {
+  background-color: #fefefe;
+  padding: 20px;
+  margin: 10% auto;
+  border: 1px solid #8d7a7a;
+  width: 30%;
+  max-width: 600px;
+  height: auto;
+}
+.replydiv {
+  margin-top: 10px;
+}
+.replydiv button {
+  width: 50;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(221, 29, 29, 0.05);
+  border-radius: 20px;
+  color: #000000;
+  border: 1px solid black;
+
+  border-radius: 20px;
+  cursor: pointer;
+}
+.modal_content h2 {
+  padding: 10px;
+}
+.modal_content p {
+  padding: 10px;
+}
+.modal_content label {
+  padding: 10px;
+  margin-top: 10px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-top: 8px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.sentdiv {
+  border: 1px solid black;
+}
+
+.replytrans {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 55px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+@media (max-width: 1102px) {
+  .modal_content {
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 10% auto;
+    border: 1px solid #8d7a7a;
+    width: 53%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+@media (max-width: 765px) {
+  .modal_content {
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 10% auto;
+    border: 1px solid #8d7a7a;
+    width: 53%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+@media (max-width: 662px) {
+  .modal_content {
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 35% auto;
+
+    border: 1px solid #8d7a7a;
+    width: 93%;
+    max-width: 600px;
+    height: auto;
+  }
+  .modal_header {
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  .modal_content p {
+    padding: 10px;
+  }
+  .replydiv {
+    margin-top: 10px;
+  }
+  .replydiv input {
+    width: 110px;
+  }
+}
+
+@media (max-width: 343px) {
+  .modal_content {
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 35% auto;
+    border: 1px solid #8d7a7a;
+    width: 93%;
+    max-width: 600px;
+    height: auto;
+  }
+  .replydiv input {
+    width: 88px;
+  }
+}
+
+@media (max-width: 280px) {
+  .replydiv input {
+    width: 77px;
+  }
+  .modal_content label {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
